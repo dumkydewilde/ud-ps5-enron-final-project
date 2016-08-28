@@ -458,6 +458,8 @@ The first problem that pops up here is that because of our small sample size the
 
 ## Task 5: Tuning the Model
 
+Finally we will combine everything discussed in a grid search with cross validation to find the best parameters. We will compare four classifiers with different parameters and 3 options for feature selection. (note: the number of iterations is now set at 100 for less running time, but for a proper analysis a 1000 worked better, this however took a very long time to run for all of the classifiers.)
+
 
 ```python
 from sklearn.grid_search import GridSearchCV
